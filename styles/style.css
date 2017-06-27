@@ -1,25 +1,13 @@
 element.style {}
 
-(index):8 body,
-html {
+a, body {
+  background: #FFF;
+  color: #222;
+  font-family: arial, sans-serif;
   font-size: small;
 }
 
-(index):8 body {
-  background: #fff;
-  color: #222;
-}
-
-(index):8 body,
-td,
-a,
-p,
-.h {
-  font-family: arial, sans-serif;
-}
-
-(index):8 html,
-body {
+html, body {
   height: 100%;
   margin: 0;
 }
@@ -30,9 +18,117 @@ user agent stylesheet body {
 }
 
 
-/*Inherited from html*/
+/* Start of Header */
+a, button, li {text-decoration: none;}
 
-(index):8 body,
-html {
-  /* font-size: small; */
+div.header {float: right;}
+
+li.header_link {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
 }
+
+a.signin {
+  background-color: #4285F4;
+  border-radius: 3px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+a.simple_link {
+  color: #717171;
+  font-size: 12px;
+}
+
+a.simple_link:hover {text-decoration: underline;}
+
+ul {list-style-type: none;}
+
+img#apps {margin: -8px;}
+/* End of Header */
+
+
+/* Start of Search */
+input {
+  border: none;
+  height: 30px;
+  width: 100%;
+}
+
+input:focus {outline: none;}
+
+button.click_search {
+  color: gray;
+  display: inline-block;
+  font-size: small;
+  font-weight: bold;
+  padding: 10px 18px;
+}
+
+button.click_search:hover {
+  border: 1px solid #C5C3C3;
+  font-weight: bold;
+}
+
+div.logo {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 20%;
+}
+
+div.search {
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+div.searchbar {
+  overflow: hidden;
+  height: 40px;
+  border: 1px solid #DCDCDC;
+  box-shadow: 1px 1px 0px #D2D2D2;
+  margin: 15px auto 0px auto;
+  width: 550px;
+}
+
+div.search_by_voice {
+  float: right;
+  padding: 10px 20px 5px 5px;
+}
+
+.image_logo {
+  height: 25px;
+  width: 25px;
+}
+
+div#main {
+  border-bottom: 1px solid #DCDCDC;
+  height: 820px;
+}
+
+div#search_btn {
+  margin: 20px auto;
+  text-align: center;
+  width: 600px;
+}
+/* End of Search */
+
+
+/* Start of Footer */
+a.footer {
+  display: inline-block;
+  padding: 12px 13px 13px 13px;
+  font-size: small;
+  color: gray;
+  font-weight: bold;
+}
+
+a.footer:hover {text-decoration: underline;}
+
+div#footer_link_left {float: left;}
+
+div#footer_link_right {float: right;}
+/* End of Footer */
