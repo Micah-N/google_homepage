@@ -1,0 +1,38 @@
+element.style {}
+
+(index):8 body,
+html {
+  font-size: small;
+}
+
+(index):8 body {
+  background: #fff;
+  color: #222;
+}
+
+(index):8 body,
+td,
+a,
+p,
+.h {
+  font-family: arial, sans-serif;
+}
+
+(index):8 html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+user agent stylesheet body {
+  display: block;
+  margin: 8px;
+}
+
+
+/*Inherited from html*/
+
+(index):8 body,
+html {
+  /* font-size: small; */
+}
